@@ -91,3 +91,6 @@ footer#filler-footer {
 
 ol, ul, li {
 	list-style-position: inside;
+	margin-left: 0;
+	padding-left: 0;
+}
