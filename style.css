@@ -28,7 +28,7 @@ body > header#main-si-header > h1 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-body > #si-tab-holder {
+body > header#main-si-header > #si-tab-holder {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
