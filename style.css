@@ -28,7 +28,7 @@ body > header#main-si-header > h1 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-body > header#main-si-header > div#si-tab-holder {
+body > #si-tab-holder {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -38,6 +38,7 @@ body > header#main-si-header > div#si-tab-holder {
 	align-content: flex-end;
 	position: sticky;
 	top: 28px;
+	background-color: greenyellow;
 }
 
 #si-tab-holder > si-tab {
