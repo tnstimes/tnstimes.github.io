@@ -88,3 +88,6 @@ footer#main-footer {
 footer#filler-footer {
 	visibility: hidden;
 }
+
+ol, ul, li {
+	list-style-position: inside;
