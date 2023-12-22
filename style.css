@@ -102,3 +102,8 @@ ol, ul, li {
 ol ol {
 	list-style-type: lower-alpha;
 }
+
+ol:not(ol ol) > li::after {
+	content: " ";
+	display: block;
+}
