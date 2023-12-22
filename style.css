@@ -99,6 +99,6 @@ ol, ul, li {
 	font-weight: bold;
 }
 
-ol:not(ol ol) ol {
+ol ol {
 	list-style-type: lower-alpha;
 }
