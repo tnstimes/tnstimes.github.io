@@ -59,6 +59,12 @@ body > header#main-si-header > #si-tab-holder {
 	font-weight: bold;
 }
 
+#main-si-content-section {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+}
+
 #main-si-content-section > section[id] {
 	display: none;
 }
