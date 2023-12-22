@@ -99,6 +99,6 @@ ol, ul, li {
 	font-weight: bold;
 }
 
-ol > ol { /* only works for 2 layers of nesting max */
+ol:not(ol ol) ol {
 	list-style-type: lower-alpha;
 }
