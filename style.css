@@ -1,5 +1,17 @@
 @import "https://fonts.googleapis.com/css2?family=EB+Garamond";
 
+:root {
+	--light-theme: #adff2f;
+	--dark-theme: #9acd32;
+	--accent-theme: #ffff00;
+}
+
+body.bluetheme {
+	--light-theme: #00eeff;
+	--dark-theme: #0088ff;
+	--accent-theme: #adff2f;
+}
+
 body, * {
 	font-family: "EB Garamond", 'Courier New', Courier, monospace;
 	text-align: center;
@@ -20,15 +32,10 @@ a {
 
 body > header#main-si-header {
 	width: 100%;
-	background-color: greenyellow;
+	background-color: var(--light-theme);
 	position: relative;
 }
 
-body.bluetheme > header#main-si-header {
-	width: 100%;
-	background-color: #00eeff;
-	position: relative;
-}
 
 body > header#main-si-header > h1 {
 	padding-top: 50px;
@@ -44,11 +51,11 @@ body > header#main-si-header > #si-tab-holder {
 	align-content: flex-end;
 	position: sticky;
 	top: 28px;
-	background-color: greenyellow;
+	background-color: transparent;
 }
 
 #si-tab-holder > si-tab {
-	background-color: yellowgreen;
+	background-color: var(--dark-theme);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border: 2px double black;
@@ -60,12 +67,9 @@ body > header#main-si-header > #si-tab-holder {
 	height: 100%;
 }
 
-body.bluetheme > header#main-si-header > #si-tab-holder > si-tab {
-	background-color: #0088ff;
-}
 
 #si-tab-holder > si-tab.active {
-	background-color: yellow;
+	background-color: var(--accent-theme);
 	font-weight: bold;
 }
 
@@ -121,4 +125,14 @@ ol ol {
 
 ol:not(ol ol) > li:not(:last-child) {
 	margin-bottom: 10px;
+}
+
+button {
+	background-color: var(--light-theme);
+	padding: 5px;
+	border: 1px solid black;
+}
+
+button:hover {
+	background-color: var(--dark-theme);
 }
