@@ -24,6 +24,12 @@ body > header#main-si-header {
 	position: relative;
 }
 
+body.bluetheme > header#main-si-header {
+	width: 100%;
+	background-color: #00eeff;
+	position: relative;
+}
+
 body > header#main-si-header > h1 {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -52,6 +58,10 @@ body > header#main-si-header > #si-tab-holder {
 	box-sizing: content-box;
 	min-height: 21px;
 	height: 100%;
+}
+
+body.bluetheme > header#main-si-header > #si-tab-holder > si-tab {
+	background-color: #0088ff;
 }
 
 #si-tab-holder > si-tab.active {
