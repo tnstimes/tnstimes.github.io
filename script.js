@@ -20,3 +20,17 @@
 	fillerFooter.id="filler-footer";
 	document.body.append(fillerFooter);
 }
+{
+	let themeBtn = document.createElement("button");
+	themeBtn.outerHTML = "<button id=\"themeBtn\">Change theme</button>";
+	themeBtn.addEventListener("click", function(e) {
+		if (localStorage.getItem("theme") === "blue") {
+			localStorage.setItem("theme", "original
+			document.body.classList.remove("bluetheme");
+		} else {
+			localStorage.setItem("theme", "blue");
+			document.body.classList.add("bluetheme");
+		};
+	});
+	document.querySelector("#main-footer").prepend(themeBtn);
+}
