@@ -25,7 +25,7 @@
 	themeBtn.outerHTML = "<button id=\"themeBtn\">Change theme</button>";
 	themeBtn.addEventListener("click", function(e) {
 		if (localStorage.getItem("theme") === "blue") {
-			localStorage.setItem("theme", "original
+			localStorage.setItem("theme", "original");
 			document.body.classList.remove("bluetheme");
 		} else {
 			localStorage.setItem("theme", "blue");
