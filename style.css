@@ -65,12 +65,14 @@ body > header#main-si-header > #si-tab-holder {
 	box-sizing: content-box;
 	min-height: 21px;
 	height: 100%;
+	cursor: pointer;
 }
 
 
 #si-tab-holder > si-tab.active {
 	background-color: var(--accent-theme);
 	font-weight: bold;
+	cursor: default;
 }
 
 #si-tab-holder > si-tab:not(.active):hover {
@@ -137,6 +139,7 @@ button {
 	padding: 5px;
 	border: 1px solid black;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 button:hover {
