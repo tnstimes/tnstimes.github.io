@@ -27,7 +27,8 @@
 	themeBtn.id = "themeBtn";
 	themeBtn.textContent = "Change theme";
 	themeBtn.addEventListener("click", function(e) {
-		let currentTheme = localStorage.getItem("theme");
+		let lsCTheme = localStorage.getItem("theme");
+		let currentTheme = lsCTheme + themeSuffix;
 		let ctIndex = themes.indexOf(currentTheme);
 		if (ctIndex === -1) ctIndex = 0;
 		currentTheme = themes[ctIndex];
