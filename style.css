@@ -73,6 +73,10 @@ body > header#main-si-header > #si-tab-holder {
 	font-weight: bold;
 }
 
+#si-tab-holder > si-tab:not(.active):hover {
+	background-color: var(--light-theme);
+}
+
 #main-si-content-section {
 	box-sizing: border-box;
 	width: 100%;
@@ -103,6 +107,7 @@ footer#main-footer {
 	width: 100%;
 	background-color: white;
 	border-top: 1px solid black;
+	padding: 5px;
 }
 
 footer#filler-footer {
@@ -131,6 +136,7 @@ button {
 	background-color: var(--light-theme);
 	padding: 5px;
 	border: 1px solid black;
+	border-radius: 5px;
 }
 
 button:hover {
