@@ -12,6 +12,12 @@ body.bluetheme {
 	--accent-theme: #adff2f;
 }
 
+body.redtheme {
+	--light-theme: #fc8e86;
+	--dark-theme: #eb4034;
+	--accent-theme: #f59f16;
+}
+
 body, * {
 	font-family: "EB Garamond", 'Courier New', Courier, monospace;
 	text-align: center;
