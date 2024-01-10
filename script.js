@@ -21,16 +21,29 @@
 	document.body.append(fillerFooter);
 }
 {
+	let themes = ["originaltheme", "bluetheme", "redtheme"];
+	const themeSuffix = "theme";
 	let themeBtn = document.createElement("button");
 	themeBtn.id = "themeBtn";
 	themeBtn.textContent = "Change theme";
 	themeBtn.addEventListener("click", function(e) {
-		if (localStorage.getItem("theme") === "blue") {
-			localStorage.setItem("theme", "original");
-			document.body.classList.remove("bluetheme");
-		} else {
-			localStorage.setItem("theme", "blue");
-			document.body.classList.add("bluetheme");
+		let currentTheme = localStorage.getItem("theme");
+		let ctIndex = themes.indexOf(currentTheme);
+		if (ctIndex === -1) ctIndex = 0;
+		currentTheme = themes[ctIndex];
+
+		let ntIndex = (ctIndex + 1) % themes.length;
+		let newTheme = themes[ntIndex];
+
+		let lsNTheme = newTheme.slice(0, -themeSuffix.length);
+		localStorage.setItem("theme", lsNTheme);
+
+		for (i of themes) {
+			if (i === newTheme) {
+				document.body.classList.add(i);
+			} else {
+				document.body.classList.remove(i);
+			};
 		};
 	});
 	document.querySelector("#main-footer").prepend(themeBtn);
