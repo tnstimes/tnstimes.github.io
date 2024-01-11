@@ -22,7 +22,9 @@
 	document.body.append(fillerFooter);
 }
 {
-	function changeTheme(next=true) {
+	let themes = ["originaltheme", "bluetheme", "redtheme"];
+	const themeSuffix = "theme";
+	let changeTheme = function(next=true) {
 		let lsCTheme = localStorage.getItem("theme");
 		let currentTheme = lsCTheme + themeSuffix;
 		let ctIndex = themes.indexOf(currentTheme);
@@ -35,7 +37,7 @@
 		let lsNTheme = newTheme.slice(0, -themeSuffix.length);
 		localStorage.setItem("theme", lsNTheme);
 
-		for (i of themes) {
+		for (let i of themes) {
 			if (i === newTheme) {
 				document.body.classList.add(i);
 			} else {
@@ -43,8 +45,6 @@
 			};
 		};
 	};
-	let themes = ["originaltheme", "bluetheme", "redtheme"];
-	const themeSuffix = "theme";
 	let themeBtn = document.createElement("button");
 	themeBtn.id = "themeBtn";
 	themeBtn.textContent = "Change theme";
