@@ -1,3 +1,4 @@
+"use strict";
 {
 	let tabs = document.getElementsByTagName("si-tab")
 	for (let tab of tabs) {
@@ -21,19 +22,14 @@
 	document.body.append(fillerFooter);
 }
 {
-	let themes = ["originaltheme", "bluetheme", "redtheme"];
-	const themeSuffix = "theme";
-	let themeBtn = document.createElement("button");
-	themeBtn.id = "themeBtn";
-	themeBtn.textContent = "Change theme";
-	themeBtn.addEventListener("click", function(e) {
+	function changeTheme(next=true) {
 		let lsCTheme = localStorage.getItem("theme");
 		let currentTheme = lsCTheme + themeSuffix;
 		let ctIndex = themes.indexOf(currentTheme);
 		if (ctIndex === -1) ctIndex = 0;
 		currentTheme = themes[ctIndex];
 
-		let ntIndex = (ctIndex + 1) % themes.length;
+		let ntIndex = next ? ((ctIndex + 1) % themes.length) : ctIndex;
 		let newTheme = themes[ntIndex];
 
 		let lsNTheme = newTheme.slice(0, -themeSuffix.length);
@@ -46,6 +42,14 @@
 				document.body.classList.remove(i);
 			};
 		};
-	});
+	};
+	let themes = ["originaltheme", "bluetheme", "redtheme"];
+	const themeSuffix = "theme";
+	let themeBtn = document.createElement("button");
+	themeBtn.id = "themeBtn";
+	themeBtn.textContent = "Change theme";
+	themeBtn.addEventListener("click", () => {changeTheme();});
 	document.querySelector("#main-footer").prepend(themeBtn);
+
+	changeTheme(false);
 }
