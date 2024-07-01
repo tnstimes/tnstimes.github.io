@@ -17,11 +17,6 @@
 }
 
 {
-	let fillerFooter = document.querySelector("#main-footer").cloneNode(true);
-	fillerFooter.id="filler-footer";
-	document.body.append(fillerFooter);
-}
-{
 	let themes = ["originaltheme", "bluetheme", "redtheme"];
 	const themeSuffix = "theme";
 	let changeTheme = function(next=true) {
@@ -52,4 +47,10 @@
 	document.querySelector("#main-footer").prepend(themeBtn);
 
 	changeTheme(false);
+}
+
+{
+	let fillerFooter = document.querySelector("#main-footer").cloneNode(true);
+	fillerFooter.id="filler-footer";
+	document.body.append(fillerFooter);
 }
