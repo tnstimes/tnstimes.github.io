@@ -46,6 +46,17 @@ body > header#main-si-header > h1 {
 	padding-bottom: 50px;
 	margin: 0;
 }
+
+body > header#main-si-header > h2 { /* articles */
+	margin: 0;
+	text-transform: uppercase;
+}
+
+body > header#main-si-header > h2 + h1 { /* articles */
+	margin: 0;
+	padding: 0;
+}
+
 body > header#main-si-header > #si-tab-holder {
 	width: 100%;
 	display: flex;
@@ -88,6 +99,11 @@ body > header#main-si-header > #si-tab-holder {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 5px;
+}
+
+#main-si-content-section > div#article-section { /* articles */
+	width: min(720px, 100%);
+	font-size: 1.2rem;
 }
 
 #main-si-content-section > section[id] {
