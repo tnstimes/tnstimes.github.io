@@ -109,6 +109,11 @@ body > header#main-si-header > #si-tab-holder {
 	text-align: justify;
 }
 
+main-si-content-section > div#article-section > p::before { /* articles */
+	content: "&nbsp;&nbsp;&nbsp;&nbsp;";
+	display: inline;
+}
+
 #main-si-content-section > section[id] {
 	display: none;
 }
