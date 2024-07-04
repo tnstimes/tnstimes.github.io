@@ -18,12 +18,10 @@ body.redtheme {
 	--accent-theme: #f59f16;
 }
 
-body, * {
+body {
 	font-family: "EB Garamond", 'Courier New', Courier, monospace;
 	text-align: center;
-}
-
-body {
+	
 	padding: 0 !important;
 	margin: 0 !important;
 	position: relative;
@@ -105,6 +103,8 @@ body > header#main-si-header > #si-tab-holder {
 	width: min(720px, 100%);
 	font-size: 1.2rem;
 	margin: 0 auto;
+	
+	text-align: justify;
 }
 
 #main-si-content-section > section[id] {
