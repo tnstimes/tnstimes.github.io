@@ -13,7 +13,7 @@
 			document.getElementById(clickedtab.dataset.activates).classList.add("active")
 		})
 	}
-	document.getElementById("si-tab-holder").children[0].click()
+	document.getElementById("si-tab-holder")?.children[0].click()
 }
 
 {
