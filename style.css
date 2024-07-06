@@ -109,7 +109,7 @@ body > header#main-si-header > #si-tab-holder {
 	text-align: justify;
 }
 
-main-si-content-section > div#article-section > p::before { /* articles */
+#main-si-content-section > div#article-section > p::before { /* articles */
 	content: "&nbsp;&nbsp;&nbsp;&nbsp;";
 	display: inline;
 }
