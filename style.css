@@ -1,9 +1,18 @@
-@import "https://fonts.googleapis.com/css2?family=EB+Garamond";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 :root {
 	--light-theme: #adff2f;
 	--dark-theme: #9acd32;
 	--accent-theme: #ffff00;
+
+	--font-family: "Lexend", sans-serif;
+	--body-font-weight: 200; /* Extra Light */
+	--bold-font-weight: 300; /* Light */
+	--h3-font-weight: 400; /* Regular */
+	--h2-font-weight: 400; /* Regular */
+	--h1-font-weight: 400; /* Regular */
+	--subtitle-font-weight: 400; /* Regular */
+	--title-font-weight: 500; /* Medium */
 }
 
 body.bluetheme {
@@ -18,9 +27,39 @@ body.redtheme {
 	--accent-theme: #f59f16;
 }
 
+/* Set Fonts */
+
 body, button, input {
-	font-family: "EB Garamond", 'Courier New', Courier, monospace;
+	font-family: var(--font-family);
+	font-optical-sizing: auto;
+	font-weight: var(--body-font-weight);
 	text-align: center;
+}
+
+strong, b {
+	font-weight: var(--bold-font-weight);
+}
+
+h3 {
+	font-weight: var(--h3-font-weight);
+}
+
+h2 {
+	font-weight: var(--h2-font-weight);
+}
+
+h1 {
+	font-weight: var(--h1-font-weight);
+}
+
+.subtitle {
+	font-size: 110%;
+	font-weight: var(--subtitle-font-weight);
+}
+
+.title {
+	font-size: 125%;
+	font-weight: var(--subtitle-font-weight);
 }
 
 body {
