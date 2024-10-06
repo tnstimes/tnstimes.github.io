@@ -126,7 +126,7 @@ body > header#main-si-header > #si-tab-holder {
 
 #si-tab-holder > si-tab.active {
 	background-color: var(--accent-theme);
-	font-weight: bold;
+	font-weight: var(--bold-font-weight);
 	cursor: default;
 }
 
@@ -186,7 +186,7 @@ ol, ul, li {
 }
 
 ::marker {
-	font-weight: bold;
+	font-weight: var(--bold-font-weight);
 }
 
 ol ol {
