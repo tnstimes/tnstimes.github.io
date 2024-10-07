@@ -98,14 +98,18 @@ body > header#main-si-header > h1 {
 	margin: 0;
 }
 
-body > header#main-si-header > h2 { /* articles */
+body.article > header#main-si-header > h2 { /* articles */
 	margin: 0;
 	text-transform: uppercase;
 }
 
-body > header#main-si-header > h2 + h1 { /* articles */
+body.article > header#main-si-header > h2 + h1 { /* articles */
 	margin: 0;
 	padding: 0;
+}
+
+body.article > header#main-si-header { /* articles */
+    padding: 20px;
 }
 
 body > header#main-si-header > #si-tab-holder {
