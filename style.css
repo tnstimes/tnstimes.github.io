@@ -17,6 +17,17 @@
 	--main-font-color: black;
 }
 
+/* Style reset */
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        background: transparent;
+}
+
+/*Themes */
 body.bluetheme {
 	--light-theme: #00eeff;
 	--dark-theme: #0088ff;
@@ -55,14 +66,12 @@ h1 {
 	font-weight: var(--h1-font-weight);
 }
 
-.subtitle {
-	font-size: 110%;
+.subtitle {=
 	font-weight: var(--subtitle-font-weight);
 }
 
 .title {
-	font-size: 125%;
-	font-weight: var(--subtitle-font-weight);
+	font-weight: var(--title-font-weight);
 }
 
 body {
