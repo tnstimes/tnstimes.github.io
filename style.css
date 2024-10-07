@@ -17,16 +17,6 @@
 	--main-font-color: black;
 }
 
-/* Style reset */
-* {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        vertical-align: baseline;
-        background: transparent;
-}
-
 /*Themes */
 body.bluetheme {
 	--light-theme: #00eeff;
