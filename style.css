@@ -99,7 +99,8 @@ body.article > header#main-si-header > h2 + h1 { /* articles */
 }
 
 body.article > header#main-si-header { /* articles */
-    padding: 20px;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 body > header#main-si-header > #si-tab-holder {
