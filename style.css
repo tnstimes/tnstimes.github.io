@@ -147,6 +147,21 @@ body > header#main-si-header > #si-tab-holder {
 	padding: 5px;
 }
 
+#main-si-content-section > .issue-container { /* issues */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.issue-container > div { /* issue */
+	border: 1px solid black;
+	height: 500px;
+	flex: 1 1 0;
+	margin: 20px;
+}
+
 #main-si-content-section > div#article-section { /* articles */
 	width: min(720px, 100%);
 	font-size: 1.2rem;
