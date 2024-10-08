@@ -56,7 +56,7 @@ h1 {
 	font-weight: var(--h1-font-weight);
 }
 
-.subtitle {=
+.subtitle {
 	font-weight: var(--subtitle-font-weight);
 }
 
@@ -168,6 +168,15 @@ body > header#main-si-header > #si-tab-holder {
 	margin: 0 auto;
 	
 	text-align: justify;
+}
+
+div#article-section > p.image-container .image-caption {
+	font-style: italic;
+}
+
+div#article-section > p.image-container img {
+	width: 100%;
+	height: auto;
 }
 
 #main-si-content-section > section[id] {
