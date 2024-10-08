@@ -171,6 +171,13 @@ body > header#main-si-header > #si-tab-holder {
 	text-align: center;
 }
 
+#main-si-content-section > .announcement-top {
+	width: calc(100% - 10px);
+	box-sizing: border-box;
+	border: 1px solid black;
+	margin: 5px;
+}
+
 
 footer#main-footer {
 	position: fixed;
