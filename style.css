@@ -168,6 +168,10 @@ body > header#main-si-header > #si-tab-holder {
 	align-content: center;
 }
 
+.issue-container > div > h2 { /* issue */
+	margin: 0;
+}
+
 #main-si-content-section > div#article-section { /* articles */
 	width: min(720px, 100%);
 	font-size: 1.2rem;
