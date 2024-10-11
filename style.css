@@ -160,6 +160,12 @@ body > header#main-si-header > #si-tab-holder {
 	height: 500px;
 	flex: 1 1 0;
 	margin: 20px;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 #main-si-content-section > div#article-section { /* articles */
